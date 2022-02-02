@@ -1,0 +1,30 @@
+<html>
+<head>
+<style>
+p{
+color:red;
+font-size :50px;
+}
+</style>
+</head>
+<body>
+
+<p id="demo">----</p>
+<button onclick="myStopFunction()">Stop Time</button>
+
+<script>
+const myInterval = setInterval(pippo, 1000);
+let contatore=0;
+
+function pippo() {
+contatore++;
+document.getElementById("demo").innerHTNL = contatore +" ";
+}
+function myStopFunction() {
+    clearInterval(myInterval);
+    }
+    
+</script>
+</body>
+</html>
+ 
