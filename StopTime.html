@@ -1,30 +1,53 @@
-<html>
-<head>
-<style>
-p{
-color:red;
-font-size :50px;
-}
-</style>
-</head>
-<body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-<p id="demo">----</p>
-<button onclick="myStopFunction()">Stop Time</button>
-
-<script>
-const myInterval = setInterval(pippo, 1000);
-let contatore=0;
-
-function pippo() {
-contatore++;
-document.getElementById("demo").innerHTNL = contatore +" ";
-}
-function myStopFunction() {
-    clearInterval(myInterval);
+    <style>
+    p{
+    color: red;
+    font-size: 30px;    
     }
-    
-</script>
-</body>
-</html>
+    </style>
+  </head>
+  <body>
+    <h2>codice test per i giochi basasti sui tempi</h2>
  
+    <p id="demo">
+      Questa pagina conta quanto tempo ci metti a premere il bottone
+    </p>
+    <p id="demo">-----</p>
+    <p id="out">........0.0</p>
+    <p id="nclick">0</p>
+    <button type="button" onclick="count()">Invia</button>
+    <button onclick="myStopFunction()">Stop Time</button>
+    <script>
+      let i = 0;
+      let start = Date.now();
+      let counter = 0;
+      function count() {
+        document.getElementById("out").innerHTML +=
+          " " + (Date.now() - start) + " ms";
+        counter++;
+        document.getElementById("nclick").innerHTML = counter.toString();
+      }
+    
+
+     const myInterval = setInterval(tempo, 1000);
+     let contatore=0;
+
+     function tempo(){
+     contatore++;
+     document.getElementById("demo").innerHTML = contatore +" ";    
+     }
+
+     function myStopFunction() {
+         clearInterval(myInterval);
+     }
+
+    </script>
+  </body>
+</html>
