@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"&gt;
+<body>
+
+<div class="w3-container w3-teal">
+  <h1>Mia APP</h1>
+</div>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #fufi{
+            visibility: hidden;
+        }
+        #boh {
+            visibility: hidden;
+        }
+        #fufi {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+#fufi:hover {background-color: #3e8e41}
+
+#fufi:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+    </style>
+  </head>
+  <body>
+    
+
+    
+    
+    <p id="out">Tempo</p>
+    <p id="nclick">Click Fatti</p>
+    <p id="demolition">3</p>
+    <p id="boh">13</p>
+
+    <button id="fufi" type="button" onclick="count()">Clicca Qui</button>
+
+    <script>
+      let i = 0;
+      let start = Date.now();
+      let CosoClick = 0;
+      const myInterval = setInterval(pippo,1000);
+      const Interval = setInterval(tonno,1000);
+      const NonSo = setInterval(Rubik,13000);
+      const Pollo = setInterval(fill,3000);
+      var contatore = 3;
+      var bolo = 13;
+      
+
+      function count() {
+        document.getElementById("out").innerHTML =
+          " " + (Date.now() - start) + " ms";
+        CosoClick++;
+        document.getElementById("nclick").innerHTML = CosoClick.toString();
+      }
+
+      function pippo() {
+        contatore--;
+        document.getElementById("demolition").innerHTML = contatore+" ";
+      }
+      
+      function fill() {
+        clearInterval(myInterval)
+        clearInterval(Pollo)
+        document.getElementById("demolition").innerHTML = "Comincia";
+        document.getElementById("fufi").style.visibility = "visible";
+        document.getElementById("boh").style.visibility = "visible";
+        
+      }
+
+      function tonno() {
+        bolo--;
+        document.getElementById("boh").innerHTML = bolo+" ";
+      }
+
+      function Rubik() {
+        document.getElementById("boh").style.visibility = "hidden";
+        document.getElementById("fufi").style.visibility = "hidden";
+        document.getElementById("demolition").style.visibility = "hidden";
+        document.getElementById("out").style.visibility = "hidden";
+      }
+
+
+      
+
+
+
+    </script>
+  </body>
+</html>
+
+
+
+<div class="w3-container">
+  <p>A car is a wheeled, self-powered motor vehicle used for transportation.</p>
+</div>
+
+<div class="w3-container w3-teal">
+  <p>My footer information</p>
+</div>
+
+</body>
+</html>
