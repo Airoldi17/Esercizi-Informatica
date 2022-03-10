@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArrayBidimensionale</title>
+</head>
+<body>
+    <div id="1"></div>
+    <div id="2"></div>
+    <div id="3"></div>
+
+    <script>
+        let Array0=[],Array1=[];
+        
+        Array2=[];
+        for(let i=0;i<10;i++){
+            Array2.push(parseInt(Math.random()*10))
+            Array0.push(Array2)
+        }
+        document.getElementById("1").innerHTML=Array2[2];
+
+        Array3=[];
+        for(let i=0;i<10;i++){
+            Array3.push(parseInt(Math.random()*10))
+            Array0.push(Array3)
+        }
+        document.getElementById("2").innerHTML=Array3[2]
+
+        Array4=[];
+        for(let i=0;i<10;i++){
+            Array4.push(parseInt(Math.random()*10))
+            Array0.push(Array4)
+        }
+        document.getElementById("3").innerHTML=Array4[2]
+    </script>
+
+</body>
+</html>
