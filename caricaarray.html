@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaricaArray</title>
+</head>
+<body>
+   <button id="CaricaArray" onclick="StampaArray()">CaricaArray</button>
+   <button id="CaricaMassimo">CaricaMassimo</button>
+   <button id="CaricaMinimo">CaricaMinimo</button>
+   <div id="out1"></div>
+    
+    <script>
+    function StampaArray(){
+        CaricaArray=[];
+        for(let i=0;i<1000;i++){
+            CaricaArray.push(parseInt(Math.random()*1000))
+        }
+        document.getElementById("out1").innerHTML=CaricaArray;
+    }
+    </script>
+</body>
+</html>
+
