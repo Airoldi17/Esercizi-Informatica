@@ -8,15 +8,16 @@
 </head>
 <body>
 
-    <input id="mioInput" type="text" value="">
-    <br>
-    <button id="miobottone" onclick="calcola();">Calcola i fattori</button>
-     
     <p id="out"></p>
     <script>
-       function calcola()
-       {          let n= document.getElementById("mioInput").value;
-                   document.getElementById("out").innerHTML=fattorizzatore(n);
+        let i= 0;
+
+       for(let v=0;v<1000; v++)
+
+        {          let n= i++;
+
+                   document.getElementById("out").innerHTML+=fattorizzatore(n)+ i+ " ";
+
 
        }
        
