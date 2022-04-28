@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Numeri Primi</h1>
+
+    <button id="miobottone" onclick="generaPrimi();">Genera Numeri</button>
+    <script>
+        function generaPrimi(){
+     for(let i=1; i<=100;i++)
+     {
+        if (isPrime(i))
+        {
+            document.write("<span>^"+i+"^</span><br>");
+        }
+        else
+        {
+            document.write("<span>"+i+"</span><br>")
+        }
+     }
+        }
+
+        function isPrime(n) {
+let primo=true;
+for(let fattore=2;(fattore<=n/2    );fattore++)
+{
+if(n%fattore==0)
+{
+    primo=false;
+}
+}
+return primo;
+}
+
+</script>
+
+</body>
+</html>
