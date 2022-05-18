@@ -53,11 +53,11 @@
             V2=CalcolaV(I,R2);
             V3=CalcolaV(I,R3);
 
-            document.write("<span>"+"Resistenza equivalente: "+Req.toFixed(1)+" Ω"+"</span> <br>");
-            document.write("<span>"+"Prima tensione: "+V1.toFixed(1)+" V"+"</span> <br>");
-            document.write("<span>"+"Seconda tensione: "+V2.toFixed(1)+" V"+"</span> <br>");
-            document.write("<span>"+"Terza tensione: "+V1.toFixed(1)+" V"+"</span> <br>");
-            document.write("<span>"+"Corrente: "+I+" A"+"</span> <br>");
+            document.write("<span>"+"Resistenza EQ: "+Req.toFixed(1)+" Ω"+"</span> <br>");
+            document.write("<span>"+"V1: "+V1.toFixed(1)+" V"+"</span> <br>");
+            document.write("<span>"+"V2: "+V2.toFixed(1)+" V"+"</span> <br>");
+            document.write("<span>"+"V3: "+V1.toFixed(1)+" V"+"</span> <br>");
+            document.write("<span>"+"I: "+I+" A"+"</span> <br>");
             
             
         
@@ -84,11 +84,11 @@
             I2=CalcolaI(V,R2);
             I3=CalcolaI(V,R3);
 
-            document.write("<span>"+"Resistenza equivalente: "+Req.toFixed(1)+" Ω"+"</span> <br>");
-            document.write("<span>"+"Prima corrente: "+I1.toFixed(2)+" I"+"</span> <br>");
-            document.write("<span>"+"Seconda corrente: "+I2.toFixed(2)+" I"+"</span> <br>");
-            document.write("<span>"+"Terza corrente: "+I3.toFixed(2)+" I"+"</span> <br>");
-            document.write("<span>"+"Tensione: "+V+" V"+"</span> <br>");
+            document.write("<span>"+"Resistenza EQ: "+Req.toFixed(1)+" Ω"+"</span> <br>");
+            document.write("<span>"+"I1: "+I1.toFixed(2)+" I"+"</span> <br>");
+            document.write("<span>"+"I2: "+I2.toFixed(2)+" I"+"</span> <br>");
+            document.write("<span>"+"I3: "+I3.toFixed(2)+" I"+"</span> <br>");
+            document.write("<span>"+"V: "+V+" V"+"</span> <br>");
         }
         function CalcolaReqPar(a,b,c) {
             let Som1= -(-a-b);
